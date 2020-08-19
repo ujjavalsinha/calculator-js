@@ -7,23 +7,27 @@
 table {
     margin : auto;
 }
-input {
-    width: 202px;
+input[type=text] {
+    margin : 15px auto;
+    width: 220px;
     height: 33px;
     font-size: 28px;
-    border: 3px solid dodgerblue;
-    border-radius: 10px;
+    border : 1px solid grey;
+    transition: ease-in-out, width .35s ease-in-out;
 }
+input[type=text]:focus {
+    width: 230px;
+  }
 
 button {
     font-size: 25px;
-    width: 49px;
-    height: 42px;
-    border-radius: 9px;
-    background-color: deepskyblue;
+    width: 55px;
+    height: 50px;
+    border : none;
+    border-radius : 40px;
 }
 button:hover{
-    background-color : #ff0000d6;
+    background-color : grey;
 }
 button:focus{
 
@@ -32,6 +36,26 @@ button:focus{
     display : inline-block;
     border: 1px solid black;
     padding: 6px;
-    background-color: #1ee979;
+    background-color: white;
     border-radius: 10px;
+}
+
+button.plus {
+    background-color : #FC766AFF;
+}
+
+button.multiply{
+    background-color : #5B84B1FF
+}
+
+button.mod{
+    background-color: #5F4B8BFF;
+}
+
+button.minus{
+    background-color: #42EADDFF;
+}
+
+button.equalto{
+    background-color: #ADEFD1FF ;
 }
