@@ -12,11 +12,15 @@ input[type=text] {
     width: 220px;
     height: 33px;
     font-size: 28px;
-    border : 1px solid grey;
+    /* border : 1px solid grey; */
     transition: ease-in-out, width .35s ease-in-out;
+    text-align : right;
+    border : none
 }
+
 input[type=text]:focus {
     width: 230px;
+    outline : none;
   }
 
 button {
@@ -38,24 +42,44 @@ button:focus{
     padding: 6px;
     background-color: white;
     border-radius: 10px;
+    box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 button.plus {
     background-color : #FC766AFF;
 }
+button.plus:hover {
+    filter: brightness(0.8);
+  }
 
 button.multiply{
     background-color : #5B84B1FF
 }
+button.multiply:hover {
+    filter: brightness(0.8);
+  }
 
 button.mod{
     background-color: #5F4B8BFF;
 }
+button.mod:hover {
+    filter: brightness(0.8);
+  }
 
 button.minus{
     background-color: #42EADDFF;
 }
 
+button.minus:hover {
+    filter: brightness(0.8);
+  }
+
 button.equalto{
     background-color: #ADEFD1FF ;
+}
+button.equalto:hover{
+    filter : brightness(0.8);
+}
+button:focus {
+    outline:0;
 }
